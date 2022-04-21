@@ -1,0 +1,136 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5265c4;
+}
+
+.navbar > .nav-logo {
+  font-weight: bold;
+  font-size: 21px;
+  margin: 15px;
+  color: #ffffff;
+}
+
+.navbar > .nav-toggle {
+  display: none;
+}
+
+.navbar > .nav-items > .nav-btn {
+  text-decoration: none;
+  padding: 15px;
+  opacity: 0.85;
+}
+
+.navbar > .nav-items > .nav-btn:hover {
+  opacity: 1;
+}
+
+.nav-label {
+  color: #ffffff;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 300ms;
+}
+
+.nav-btn:hover > .nav-label::before {
+  width: 100%;
+}
+
+label.nav-btn input[type="file"] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbar > .nav-items {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: stretch;
+    background: #3b4da7;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 300ms;
+  }
+
+  .navbar > .nav-items.open {
+    height: calc(100% - 60px);
+  }
+
+  .navbar > .nav-items > .nav-btn {
+    opacity: 1;
+    text-align: center;
+  }
+
+  .navbar > .nav-items > .nav-btn:hover {
+    background: #6f82e5;
+  }
+
+  .nav-label::before {
+    background: transparent;
+  }
+
+  .navbar > .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle > .bar {
+    position: relative;
+  }
+
+  .nav-toggle > .bar,
+  .nav-toggle > .bar::before,
+  .nav-toggle > .bar::after {
+    width: 30px;
+    border-radius: 2px;
+    height: 2px;
+    background: #ffffff;
+    transition: transform 200ms ease-in-out, background 100ms;
+  }
+
+  .nav-toggle > .bar::before,
+  .nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+  }
+
+  .nav-toggle > .bar::before {
+    transform: translateY(-8px);
+  }
+
+  .nav-toggle > .bar::after {
+    transform: translateY(8px);
+  }
+
+  .nav-toggle.open > .bar {
+    background: transparent;
+  }
+
+  .nav-toggle.open > .bar::before {
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle.open > .bar::after {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,27 @@
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-manage-panel {
+  display: flex;
+  margin: 15px 15px;
+}
+
+.list-manage-btn {
+  border: 2px solid #5265c4;
+  background: #5265c4;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-top: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  cursor: pointer;
+  min-width: 18px;
+  color: #ffffff;
+}
+
+.add-btn:before {
+  content: url('../images/plus-solid.svg');
+}

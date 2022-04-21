@@ -1,0 +1,143 @@
+.edit-btn:before {
+  content: url('../images/edit.svg');
+  cursor: pointer;
+}
+
+.entry-img > img {
+  max-height: 90px;
+  max-width: 100%;
+}
+
+.entry-img {
+  width: 61px;
+  padding-right: 15px;
+}
+
+.entry-num {
+  width: 20px;
+  text-align: center;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.table-row.header {
+  background-color: #5265c4;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+
+.entry-main {
+  width: calc(100% - 111px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.entry-desc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 85%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.entry-user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.user-progress {
+  flex-grow: 1;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.entry-title {
+  width: 90%;
+  flex-shrink: 0;
+  padding-right: 15px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.user-score {
+  flex-grow: 1;
+}
+
+.user-status {
+  width: 75%;
+  padding-right: 15px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+  .hide-1100 {
+    display: none;
+  }
+
+  .entry-desc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 75%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .user-progress:before {
+    content: "Progress: ";
+    color: #3d3d3d;
+  }
+
+  .entry-title {
+    width: 100%;
+    flex-shrink: 0;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 720px) {
+  .entry-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .hide-720 {
+    display: none;
+  }
+
+  .entry-desc, .entry-user {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-row {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+}

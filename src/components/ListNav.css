@@ -1,0 +1,33 @@
+.list-groups {
+  display: flex;
+  flex-grow: 1;
+  margin: 15px 15px;
+  justify-content: center;
+}
+
+.group-select {
+  display: none;
+}
+
+.list-group-btn {
+  border: 2px solid #5265c4;
+  background: #5265c4;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .list-groups {
+    display: none;
+  }
+
+  .group-select {
+    display: block;
+    margin: 15px 15px;
+    flex-grow: 1;
+  }
+}
