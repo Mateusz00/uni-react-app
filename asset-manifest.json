@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/uni-react-app/static/css/main.f26e6094.css",
+    "main.css": "/uni-react-app/static/css/main.7de96f6c.css",
     "main.js": "/uni-react-app/static/js/main.623cf410.js",
     "static/media/edit.svg": "/uni-react-app/static/media/edit.0f2469edf27db7a4a8ce.svg",
     "index.html": "/uni-react-app/index.html",
     "static/media/plus-solid.svg": "/uni-react-app/static/media/plus-solid.aaa425eb0f3119cdc39f.svg",
-    "main.f26e6094.css.map": "/uni-react-app/static/css/main.f26e6094.css.map",
+    "main.7de96f6c.css.map": "/uni-react-app/static/css/main.7de96f6c.css.map",
     "main.623cf410.js.map": "/uni-react-app/static/js/main.623cf410.js.map"
   },
   "entrypoints": [
-    "static/css/main.f26e6094.css",
+    "static/css/main.7de96f6c.css",
     "static/js/main.623cf410.js"
   ]
 }
